@@ -1,0 +1,7 @@
+# PyMantiq-Core Requirements
+# Phase 1 MVP has no external dependencies (pure Python)
+
+# For Phase 2 development (optional):
+# openai>=1.0.0  # For LLM integration
+# spacy>=3.0.0   # For NLP parsing
+# pytest>=7.0.0  # For extended test suite
