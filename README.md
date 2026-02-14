@@ -7,6 +7,15 @@
 *"The truth is not determined by majority vote." — Al-Ghazali*
 
 ---
+## 📄 Research Paper
+
+> **Status:** Submitted to arXiv (pending endorsement)  
+> **Paper:** [Download PDF](https://github.com/HamzaNasiem/PyMantiq-Core/raw/main/pymantiq_paper.pdf.pdf)  
+> **Title:** PyMantiq: A Proof-of-Concept Framework for Integrating Aristotelian Syllogistic Logic with Large Language Models
+
+**Abstract:** This paper introduces PyMantiq, a neuro-symbolic framework combining 2,300-year-old Aristotelian logic with modern LLMs for deterministic verification of reasoning chains.
+
+---
 
 ## Abstract
 
@@ -365,7 +374,7 @@ If this hypothesis is true, it suggests that:
 
 ```bash
 # Clone the repository
-git clone https://github.com/hamzanaseem/PyMantiq-Core.git
+git clone https://github.com/hamzanasiem/PyMantiq-Core.git
 cd PyMantiq-Core
 
 # Run the demo
@@ -429,9 +438,9 @@ This is Phase 1 of a multi-decade project. Contributions are welcome in the foll
 - Currently targeting admission at Stanford/MIT for advanced AI safety research
 
 **Contact:**  
-- GitHub: [@hamzanaseem](https://github.com/hamzanaseem)
-- Email: [Your Email]
-- LinkedIn: [Your Profile]
+- GitHub: [https://github.com/hamzanasiem](https://github.com/hamzanasiem)
+- Email: [hafizhamza786921@gmail.com](hafizhamza786921@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/hamzanasiem/](https://www.linkedin.com/in/hamzanasiem/)
 
 **The Unique Synthesis:**  
 This project exists because I spent 8 years learning a tradition that most computer scientists have never encountered—and I spent 2 years building AI systems that most Islamic scholars have never used. PyMantiq is the artifact of that collision.
