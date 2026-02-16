@@ -1,8 +1,5 @@
 # Code Architecture Explanation: Why I Built It This Way
 
-## For: Hamza Naseem
-## By: Senior Research Engineer (Claude)
-
 ---
 
 ## I. The Philosophy → Code Translation
