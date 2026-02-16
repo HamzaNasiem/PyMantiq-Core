@@ -525,7 +525,7 @@ If you use PyMantiq in academic research, please cite:
 
 ---
 
-## XIX. Final Thought: Why Now?
+## XIV. Final Thought: Why Now?
 
 For 1,000 years, Mantiq was taught as **the foundation of all knowledge**—the tool that separates truth from falsehood, valid inference from fallacy.
 
