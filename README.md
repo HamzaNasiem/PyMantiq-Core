@@ -435,7 +435,6 @@ This is Phase 1 of a multi-decade project. Contributions are welcome in the foll
 
 - **8 years** of study in classical Aristotelian Logic (Mantiq), Islamic Jurisprudence, and Rhetoric in a Dars-e-Nizami environment
 - Self-taught Full-Stack & Agentic AI Developer (Python, FastAPI, LLMs)
-- Currently targeting admission at Stanford/MIT for advanced AI safety research
 
 **Contact:**  
 - GitHub: [https://github.com/hamzanasiem](https://github.com/hamzanasiem)
