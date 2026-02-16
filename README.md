@@ -17,13 +17,15 @@
 
 ---
 
+
+
 ## Abstract
 
-Modern Large Language Models (LLMs) generate text through statistical pattern matching—predicting the next token based on probabilistic distributions derived from training data. While this approach has produced remarkable fluency, it fundamentally lacks a **truth-verification mechanism**. The model does not "know" whether its output is logically valid; it only knows what is statistically likely.
+Modern Large Language Models (LLMs) generate text through statistical pattern matching but lack a **truth-verification mechanism**. They do not "know" logic; they only guess probabilities.
 
-**PyMantiq** introduces a formal verification layer based on **Aristotelian Syllogistic Logic** (Mantiq)—a 2,400-year-old deductive system that has remained mathematically sound across civilizations. By auditing LLM reasoning chains against the structural rules of syllogisms (Qiyas), this library detects **logical fallacies** before they propagate into critical decision systems.
+**PyMantiq** is a proof-of-concept framework designed to audit these models using **Aristotelian Syllogistic Logic** (Mantiq). 
 
-This is not an attempt to replace neural networks. It is an attempt to **ground** them.
+**⚠️ CURRENT STATE (Brutal Honesty):** At this stage (v0.2.0), this library acts as a **Logic Engine ONLY**. It does **not** yet parse natural language (English/Urdu) automatically. You must manually feed it the logical terms (Subjects/Predicates). The goal of this project is to build the "Logic Core" first, and then spend the next decade solving the translation layer between Human Language and Formal Logic.
 
 ---
 
@@ -226,8 +228,52 @@ The four figures differ only in the **position of the middle term**:
 Each figure has its own validity rules, which will be implemented in Phase 2.
 
 ---
+## V. The Hard Truth: Current Limitations & Grand Challenges
 
-## V. The Roadmap: From MVP to Paradigm Shift
+We are building a bridge between two worlds (Logic & AI) that have been separated for 70 years. This is not a weekend project; it is a **20-year research roadmap**. Below are the critical problems we face today that make this verified AI difficult to build:
+
+### 1. The "Blind & Deaf" Problem (No NLP Parser yet)
+* **The Flaw:** Currently, PyMantiq cannot read a sentence like *"If it rains, the match is cancelled"* and understand it. It requires a human coder to manually input: `Proposition(Term("Rain"), ...)`
+* **The Challenge:** Building a "Translator" that converts messy human speech into strict logical formulas is the Holy Grail of AI. We are working on Semantic Parsing to solve this.
+
+### 2. The Context Problem
+* **The Flaw:** Humans speak in context. If someone says *"He is ill,"* a human knows "He" refers to Ali mentioned earlier. Our code currently treats every sentence in isolation.
+* **The Challenge:** We need to implement **Discourse Representation Theory (DRT)** to track variables across a conversation.
+
+### 3. The "World Knowledge" Gap
+* **The Flaw:** If you tell the code *"All men are stones,"* it will accept it as a valid structure. It does not know that men are not stones.
+* **The Challenge:** We need to ground the logic in a **Knowledge Base** (Ontology) so the AI understands common sense reality, not just mathematical validity.
+
+### 4. Binary vs. Fuzzy Reality
+* **The Flaw:** Aristotelian logic is binary (True/False). The real world is probabilistic (Maybe/Likely).
+* **The Challenge:** Future versions must integrate **Fuzzy Logic** and **Bayesian Networks** to handle degrees of certainty (e.g., "There is an 80% chance of rain").
+
+## VI. The 20-Year Roadmap
+
+This is a marathon, not a sprint.
+
+### Phase 1: The Core Logic (Years 1-2) ✅ IN PROGRESS
+* Implement all 4 Figures of Aristotelian Logic.
+* Implement strict validation rules (as done in v0.2.0).
+* **Goal:** A perfect mathematical "Judge" that never makes a mistake if given the right inputs.
+
+### Phase 2: The Translation Layer (Years 3-7) 🚧 THE HARDEST PART
+* Build the **NLP Parser** using Neuro-Symbolic techniques.
+* Train small AI models specifically to extract "Terms" and "Premises" from English sentences.
+* **Goal:** User types English, PyMantiq understands the Logic automatically.
+
+### Phase 3: The Knowledge Integration (Years 8-15)
+* Connect PyMantiq to global knowledge bases (Cyc/ConceptNet).
+* Implement **Probabilistic Logic** (handling "Maybe" and "Mostly").
+* **Goal:** An AI that has both "Common Sense" and "Rigorous Logic."
+
+### Phase 4: The Neuro-Symbolic Brain (Years 15-20)
+* Fully integrated architecture where the Neural Network (Creativity) and Symbolic Engine (Truth) work as one brain.
+* **Goal:** Trusted General Intelligence (TGI).
+
+---
+
+## VII. The Roadmap: From MVP to Paradigm Shift
 
 ### Phase 1: The Seed (Current - MVP) ✅
 
@@ -295,7 +341,7 @@ Each figure has its own validity rules, which will be implemented in Phase 2.
 
 ---
 
-### Phase 4: The Paradigm Shift (100 Years)
+### Phase 4: The Paradigm Shift (20 Years)
 
 **Vision:** Move beyond binary logic (0/1) to **neuro-symbolic architectures** where machines possess "Aql" (Intellect)
 
@@ -334,7 +380,7 @@ Meta-Decision: "Confidence below threshold for logical rigor. Request additional
 
 ---
 
-## VI. Why This Matters: The Case for Logical Security
+## VIII. Why This Matters: The Case for Logical Security
 
 ### The Current State of AI Safety
 
@@ -363,7 +409,7 @@ If this hypothesis is true, it suggests that:
 
 ---
 
-## VII. Technical Details & Installation
+## IX. Technical Details & Installation
 
 ### Requirements
 
@@ -402,7 +448,7 @@ python pymantiq_core.py
 
 ---
 
-## VIII. Contribution Guidelines
+## X. Contribution Guidelines
 
 This is Phase 1 of a multi-decade project. Contributions are welcome in the following areas:
 
@@ -428,7 +474,7 @@ This is Phase 1 of a multi-decade project. Contributions are welcome in the foll
 
 ---
 
-## IX. Author & Background
+## XI. Author & Background
 
 **Hamza Naseem**  
 *Bridging Ancient Logic and Modern AI*
@@ -446,7 +492,7 @@ This project exists because I spent 8 years learning a tradition that most compu
 
 ---
 
-## X. Acknowledgments & Influences
+## XII. Acknowledgments & Influences
 
 This project stands on the shoulders of:
 
@@ -461,7 +507,7 @@ This project stands on the shoulders of:
 
 ---
 
-## XI. License & Citation
+## XIII. License & Citation
 
 This project is released under the **MIT License**.
 
@@ -479,7 +525,7 @@ If you use PyMantiq in academic research, please cite:
 
 ---
 
-## XII. Final Thought: Why Now?
+## XIX. Final Thought: Why Now?
 
 For 1,000 years, Mantiq was taught as **the foundation of all knowledge**—the tool that separates truth from falsehood, valid inference from fallacy.
 
